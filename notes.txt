@@ -1,0 +1,23 @@
+1. server.js
+    a. get app
+    b. connect to db
+    c. up server
+
+2. app.js
+    a. create app
+    b. use "express.json()" for post requests
+    c. use routes: app.use('/path/here/url/', router)
+
+3. router.js
+    a. create router
+    b. create methods and routes:
+        01. methods: router.post('/signUp', signUp)
+        02. routes:  router.route('/').get(getUsers)
+
+4. controllers.js
+    a. create controllers
+    b. wrap it inside catchAsync
+
+5. model.js
+    a. create schema
+    b. create model from schema
